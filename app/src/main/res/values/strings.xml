@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Flicks</string>
+    <string name="movies_label">Movies</string>
+    <string name="movie_details_label">Movie Details</string>
+</resources>

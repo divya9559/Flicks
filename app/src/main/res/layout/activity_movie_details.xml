@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ajasuja.codepath.flicks.activity.MovieDetailsActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageViewMovieImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="0.26" />
+
+    <TextView
+        android:text="Fifty Shades Darker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:id="@+id/textViewMovieTitle"
+        android:layout_below="@+id/imageViewMovieImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:fontFamily="casual" />
+
+    <RatingBar
+        android:scaleY="0.6"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textViewMovieTitle"
+        android:id="@+id/ratingBarMovieRatings"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:text="When a wounded Christian Grey tries to entice a cautious Ana Steele back into his life, she demands a new arrangement before she will give him another chance. As the two begin to build trust and find stability, shadowy figures from Christian’s past start to circle the couple, determined to destroy their hopes for a future together."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMovieTitle"
+        android:layout_marginTop="41dp"
+        android:id="@+id/textViewMovieOverview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/darker_gray"
+        android:fontFamily="casual"
+        android:layout_weight="0.11" />
+
+</LinearLayout>
